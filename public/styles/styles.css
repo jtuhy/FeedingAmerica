@@ -1,0 +1,31 @@
+body{
+	background-color: #FFE;
+}
+.MainTitle{
+	text-align: center;
+	font-size: 40pt;
+}
+.NavBar{
+	width: 90%;
+	margin: 0 auto;
+}
+.navBarElement{
+	width: 24.5%;
+	float: left;
+	text-align: center;
+	border-left: black solid 1px;
+	border-bottom: black solid 1px;
+	border-top: black solid 1px;
+	font-size: 25pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.navBarElementFinal{
+	width: 24.5%;
+	float: left;
+	text-align: center;
+	border: black solid 1px;
+	font-size: 25pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
