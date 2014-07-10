@@ -1,0 +1,92 @@
+
+<script type="text/javascript">
+	var i = 0;
+	var n = 3;
+	function switchImage(){
+		if (i < (n-1)){
+			$("#image" + i).hide();	
+			$("#image" + (i+1)).show();				
+		}
+		else{
+			i = -1;
+			$("#image" + (n-1)).hide();
+			$("#image0").show();
+		}
+		i++;
+
+	}
+	function switchRight(){
+		if (i < (n-1)){
+			$("#image" + i).hide();	
+			$("#image" + (i+1)).show();				
+		}
+		else{
+			i = -1;
+			$("#image" + (n-1)).hide();
+			$("#image0").show();
+		}
+		i++;
+
+	}
+	function switchLeft(){
+		if (i > 0){
+			$("#image" + i).hide();	
+			$("#image" + (i-1)).show();				
+		}
+		else{
+			i = n;
+			$("#image0").hide();
+			$("#image" + (n-1)).show();			
+		}
+		i--;
+
+	}
+	$(document).ready(function(){
+		$("#image1").hide();
+		$("#image2").hide();
+		$("#leftArrow").click(function(){
+			switchLeft();
+		});
+		$("#rightArrow").click(function(){
+			switchRight();
+		});
+	});
+</script>
+
+<div id="slideShow">
+	<img id="image0" class="slideShowImage" src="http://placekitten.com/1255/700">
+	<img id="image1" class="slideShowImage" src="http://placekitten.com/1256/701">
+	<img id="image2" class="slideShowImage" src="http://placekitten.com/1256/699">
+</div>
+<div id="arrowContainer">
+	<img src="images/leftArrow.png"  id="leftArrow">
+	<div id="spacer"></div>
+	<img src="images/rightArrow.png"  id="rightArrow">
+		
+	</div>
+</div>
+
+
+<div id="thridBox">
+	<div id="featuredArticle">
+		<h3 class="WOW">WOW!</h3>
+	</div>
+	<div id="otherstuff"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

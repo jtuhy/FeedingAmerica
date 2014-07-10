@@ -1,16 +1,22 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Feeding America</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="NavBar">
+	<a href="/about"><div class="navBarElement">About us</div></a>
+	<a href="/help"><div class="navBarElement">Need Help?</div></a>
+	<a href="/involved"><div class="navBarElement">Get Involved!</div></a>
+	<a href="/contribute"><div class="navBarElement">Contribute</div></a>
+</div>
+
+
+<div class="divTitle">
 	<h1 class="MainTitle"> Feeding America </h1>
-	<div class="NavBar">
-		<div class="navBarElement">HELLO</div>
-		<div class="navBarElement">HELLO</div>
-		<div class="navBarElement">HELLO</div>
-		<div class="navBarElementFinal">HELLO</div>
-	</div>
+</div>
+
+	<%=yield%>
 </body>
 </html>
